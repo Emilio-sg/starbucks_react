@@ -1,0 +1,32 @@
+.gallery {
+  background: #006241;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 10px;
+  margin: 0;
+}
+.gallery__photo {
+  width: 90%;
+  margin-top: 1.5em;
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .gallery__photo {
+    width: 30%;
+  }
+}
+@media (min-width: 1024px) {
+  .gallery__photo {
+    width: 300px;
+    margin-left: 30px;
+  }
+  .gallery {
+    justify-content: center;
+  }
+}
